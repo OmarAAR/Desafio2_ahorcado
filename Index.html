@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Challenge 2 | Juego del ahorcado</title>
+    
+</head>
+
+<body>
+
+    <header>
+		<div class="wrapper">
+			<div class="logo">Info-Tecno</div>
+			
+			<nav>
+				<a href="https://www.facebook.com/omar.aguilar.7330763">Contacto</a>
+			</nav>
+		</div>
+	</header>
+
+    <main>
+        <section class="index" style="text-align:center;">
+            <button class="btn-iniciar-juego" id="iniciar-juego">INICIAR JUEGO</button>
+            <button class="btn" id="agregar-palabra">AGREGAR PALABRA</button>
+        </section>
+
+        <section class="ingresar-palabra" style="text-align: center;">
+            <textarea name="" class="text-input" id="input-nueva-palabra"
+                placeholder="Escriba una nueva palabra"></textarea>
+            <label for="input-nueva-palabra">(!) Máximo de ocho palabras</label>
+            <button class="btn-ppal" id="btn-agregar-continuar">AGREGAR Y CONTINUAR</button>
+            <button class="btn" id="btn-cancelar">CANCELAR</button>
+        </section>
+
+        <section class="jugar" style="text-align:center;">
+            <input type="" id="input-teclado">
+            <canvas id="ahorcado"></canvas>
+            <button class="btn-ppal" id="btn-nuevo-juego">NUEVO JUEGO</button>
+            <button class="btn" id="btn-desistir">DESISTIR</button>
+        </section>
+    </main>
+
+    <div class="footer-dark">
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class=" agrupando">
+                        <div class="contac">
+                            <h3>Aprender</h3>
+                            <ul>
+                                <li><a href="https://dev.w3.org/html5/spec-LC/">HTML5</a></li>
+                                <li><a href="https://devdocs.io/css/">CSS</a></li>
+                                <li><a href="https://devdocs.io/javascript/">JAVASCRIPT</a></li>
+                            </ul>
+                        </div>
+                        <div class="contac">
+                            <h3>Especialista</h3>
+                            <ul>
+                                <li><a href="https://rpubs.com/Omar_2020/785186">Estadística</a></li>
+                                <li><a href="#">Matématicas</a></li>
+                                <li><a href="#">Computación</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="contac1">
+                        <h3> Creador : Omar Ramos.</h3>
+                        <p>Juego del ahorcado, simulador que permite agregar palabras nuevas, dudas o sugerencias a las siguientes redes sociales.</p>
+                    </div>
+
+                    <div class="col item social">
+                        <a href="https://www.facebook.com/omar.aguilar.7330763"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-snapchat"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <p class="copyright">InfoTecno.sv Derechos reservados © 2022</p>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="script_log.js"></script>
+    <script type="text/javascript" src="control_botones.js"></script>
+    <script type="text/javascript" src="horca.js"></script>
+    <script type="text/javascript" src="canvas.js"></script>
+
+</body>
+
+</html>
